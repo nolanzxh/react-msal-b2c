@@ -1,15 +1,15 @@
 {
-  "name": "react-azure-adb2c",
-  "version": "0.2.0",
+  "name": "react-msal-b2c",
+  "version": "1.0.0",
   "description": "Authentication library for Azure AD B2C and ReactJS",
-  "main": "lib/react-azure-adb2c.js",
+  "main": "lib/react-msal-b2c.js",
   "scripts": {
     "compile": "cross-env NODE_ENV=production babel src --out-dir lib",
     "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesrandall/react-azure-adb2c.git"
+    "url": "git+https://github.com/nolanzxh/react-msal-b2c"
   },
   "keywords": [
     "react",
@@ -17,16 +17,20 @@
     "AAD",
     "B2C",
     "oauth",
-    "azure"
+    "azure",
+    "msal"
   ],
   "author": "James Randall",
+  "contributors": [
+    "Nolan ZHOU <zhouxianhua0@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JamesRandall/react-azure-adb2c/issues"
+    "url": "https://github.com/nolanzxh/react-msal-b2c/issues"
   },
-  "homepage": "https://github.com/JamesRandall/react-azure-adb2c#readme",
+  "homepage": "https://github.com/nolanzxh/react-msal-b2c#readme",
   "dependencies": {
-    "msal": "^0.1.5"
+    "msal": "^1.4.15"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0"

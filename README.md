@@ -2,11 +2,9 @@
 
 Azure AD B2C is a cost effective identity provider covering social and enterprise logins but it can be awekward to integrate with - its documentation is currently not great and using it involves rooting around across multiple samples, the ADAL library, and the MSAL library.
 
-That being the case I've focused this package on B2C although with minor changes it could be used more broadly. MSAL itself, which this library wraps, is rather generic but B2C has some specific requirements and I think half of the problem with the documentation is that you end up drifting across B2C and straight AD. I wanted to make things simpler for B2C.
+This module is a wrapper over MSAL for Azure AD B2C, who simplifies the use of MSAL.
 
-Hopefully this will help people writing React apps. It makes use of MSAL underneath and the core of it (other than protecting routes) will probably work with other frameworks too but I use React at the moment. As it's an SPA my assumption in the library and documentation below is that you ultimately want to get an access token that you can use to call remote APIs. See this [Azure AD B2C post here](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-access-tokens) for details on how to set this up on the B2C side.
-
-PRs welcome!
+This module works with [msal@1.4.15](https://www.npmjs.com/package/msal/v/1.4.15)!
 
 ## Installation
 
@@ -98,4 +96,4 @@ To sign out:
 
 ## Thanks
 
-To build this I made use of the B2C site, the [MSAL library docs](https://github.com/AzureAD/microsoft-authentication-library-for-js), the [react-adal source](https://github.com/salvoravida/react-adal) and this [React MSAL sample](https://github.com/sunilbandla/react-msal-sample). Thanks!
+To build this I made fork of [react-azure-adb2c](https://github.com/JamesRandall/react-azure-adb2c) module which is deprecated, it was last published 4 years ago.
